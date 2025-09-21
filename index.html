@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Candle Stick Module</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Japanese Candlestick Patterns Guide 2025 - 30+ Trading Patterns | TradeSafeAI</title>
+    <meta name="description" content="Master 30+ Japanese candlestick patterns with interactive animations and professional trading strategies for forex, stocks, and crypto markets.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container" role="main">
+        <!-- Hero Section -->
+        <section class="hero-section" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="hero-title">Complete Japanese Candlestick Guide</h1>
+            <p class="hero-subtitle">Master 30+ candlestick patterns with interactive animations and professional trading strategies for forex, stocks, and crypto markets.</p>
+
+            <!-- Quick Navigation -->
+            <nav class="table-of-contents" role="navigation" aria-labelledby="nav-title">
+                <h2 id="nav-title">Quick Navigation</h2>
+                <div class="toc-grid" id="toc-grid"></div>
+            </nav>
+        </section>
+
+        <!-- Foundations Section -->
+        <section id="foundations" class="comprehensive-section" aria-labelledby="foundations-title">
+            <h2 id="foundations-title" class="comprehensive-title">Master the Fundamentals</h2>
+            <p class="section-intro">Master the core concepts and professional analysis techniques that every trader needs to understand - from basic anatomy to advanced psychological interpretation.</p>
+
+            <div class="fundamentals-timeline">
+                <!-- Candlestick Anatomy -->
+                <article class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Candlestick Anatomy & Formation</h3>
+                        
+                        <!-- Interactive Candlestick Diagram -->
+                        <div class="interactive-candle-section">
+                            <div class="interactive-candle-container" role="img" aria-label="Interactive Candlestick Diagram">
+                                <svg class="interactive-candlestick" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Grid background -->
+                                    <defs>
+                                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(51, 51, 51, 0.3)" stroke-width="1"/>
+                                        </pattern>
+                                    </defs>
+                                    <rect width="100%" height="100%" fill="url(#grid)"/>
+
+                                    <!-- Price guidelines -->
+                                    <line x1="80" y1="60" x2="720" y2="60" stroke="rgba(231, 76, 60, 0.4)" stroke-width="1" stroke-dasharray="5,5"/>
+                                    <line x1="80" y1="120" x2="720" y2="120" stroke="rgba(39, 174, 96, 0.4)" stroke-width="1" stroke-dasharray="5,5"/>
+                                    <line x1="80" y1="280" x2="720" y2="280" stroke="rgba(243, 156, 18, 0.4)" stroke-width="1" stroke-dasharray="5,5"/>
+                                    <line x1="80" y1="340" x2="720" y2="340" stroke="rgba(39, 174, 96, 0.4)" stroke-width="1" stroke-dasharray="5,5"/>
+
+                                    <!-- Upper Wick -->
+                                    <line id="upper-wick" class="interactive-element" data-type="wick"
+                                          x1="400" y1="60" x2="400" y2="120" 
+                                          stroke="#ffffff" stroke-width="8" stroke-linecap="round"
+                                          role="button" aria-label="Upper wick - shows highest price" tabindex="0"/>
+
+                                    <!-- Lower Wick -->
+                                    <line id="lower-wick" class="interactive-element" data-type="wick"
+                                          x1="400" y1="280" x2="400" y2="340" 
+                                          stroke="#ffffff" stroke-width="8" stroke-linecap="round"
+                                          role="button" aria-label="Lower wick - shows lowest price" tabindex="0"/>
+
+                                    <!-- Candle Body -->
+                                    <rect id="candle-body" class="interactive-element" data-type="body"
+                                          x="360" y="120" width="80" height="160" 
+                                          fill="#27ae60" stroke="#ffffff" stroke-width="2" rx="4"
+                                          role="button" aria-label="Candle body - shows open to close range" tabindex="0"/>
+
+                                    <!-- Hover zones -->
+                                    <rect class="ghost-zone interactive-element" data-type="high"
+                                          x="340" y="40" width="120" height="30" rx="8"
+                                          role="button" aria-label="High price zone" tabindex="0"/>
+                                    <rect class="ghost-zone interactive-element" data-type="close"
+                                          x="340" y="105" width="120" height="30" rx="8"
+                                          role="button" aria-label="Close price zone" tabindex="0"/>
+                                    <rect class="ghost-zone interactive-element" data-type="open"
+                                          x="340" y="265" width="120" height="30" rx="8"
+                                          role="button" aria-label="Open price zone" tabindex="0"/>
+                                    <rect class="ghost-zone interactive-element" data-type="low"
+                                          x="340" y="325" width="120" height="30" rx="8"
+                                          role="button" aria-label="Low price zone" tabindex="0"/>
+
+                                    <!-- Price Labels -->
+                                    <g class="price-labels">
+                                        <g class="interactive-element" data-type="high">
+                                            <rect x="500" y="50" width="70" height="30" class="label-high" rx="6"/>
+                                            <text x="535" y="65" class="text-high" font-weight="bold" font-size="14" text-anchor="middle" dominant-baseline="middle">HIGH</text>
+                                        </g>
+                                        <g class="interactive-element" data-type="close">
+                                            <rect x="500" y="110" width="70" height="30" class="label-close" rx="6"/>
+                                            <text x="535" y="125" class="text-close" font-weight="bold" font-size="14" text-anchor="middle" dominant-baseline="middle">CLOSE</text>
+                                        </g>
+                                        <g class="interactive-element" data-type="open">
+                                            <rect x="500" y="270" width="70" height="30" class="label-open" rx="6"/>
+                                            <text x="535" y="285" class="text-open" font-weight="bold" font-size="14" text-anchor="middle" dominant-baseline="middle">OPEN</text>
+                                        </g>
+                                        <g class="interactive-element" data-type="low">
+                                            <rect x="500" y="330" width="70" height="30" class="label-low" rx="6"/>
+                                            <text x="535" y="345" class="text-low" font-weight="bold" font-size="14" text-anchor="middle" dominant-baseline="middle">LOW</text>
+                                        </g>
+                                    </g>
+
+                                    <!-- Left labels -->
+                                    <g class="left-labels">
+                                        <g class="interactive-element" data-type="body">
+                                            <rect x="250" y="185" width="80" height="30" class="label-body" rx="6"/>
+                                            <text x="290" y="200" class="text-body" font-weight="bold" font-size="14" text-anchor="middle" dominant-baseline="middle">BODY</text>
+                                        </g>
+                                        <g class="interactive-element" data-type="wick">
+                                            <rect x="250" y="100" width="80" height="30" class="label-wick" rx="6"/>
+                                            <text x="290" y="115" class="text-wick" font-weight="bold" font-size="14" text-anchor="middle" dominant-baseline="middle">WICKS</text>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <!-- Information Popups -->
+                                <div class="popup popup-high" id="popup-high" role="tooltip">
+                                    <div class="popup-header">
+                                        <span class="popup-label high">HIGH</span>
+                                        <h4 class="popup-title">Highest Price Reached</h4>
+                                    </div>
+                                    <p class="popup-description">The maximum price level traded during the entire session - represents the peak of buying pressure before sellers stepped in</p>
+                                </div>
+
+                                <div class="popup popup-close" id="popup-close" role="tooltip">
+                                    <div class="popup-header">
+                                        <span class="popup-label close">CLOSE</span>
+                                        <h4 class="popup-title">Final Settlement Price</h4>
+                                    </div>
+                                    <p class="popup-description">The last price traded when the session ended - shows who won the battle between buyers and sellers</p>
+                                </div>
+
+                                <div class="popup popup-open" id="popup-open" role="tooltip">
+                                    <div class="popup-header">
+                                        <span class="popup-label open">OPEN</span>
+                                        <h4 class="popup-title">Session Starting Price</h4>
+                                    </div>
+                                    <p class="popup-description">The first price traded when the session began - sets the baseline for measuring the session's price movement</p>
+                                </div>
+
+                                <div class="popup popup-low" id="popup-low" role="tooltip">
+                                    <div class="popup-header">
+                                        <span class="popup-label low">LOW</span>
+                                        <h4 class="popup-title">Lowest Price Reached</h4>
+                                    </div>
+                                    <p class="popup-description">The minimum price level traded during the entire session - represents peak selling pressure before buyers defended</p>
+                                </div>
+
+                                <div class="popup popup-body" id="popup-body" role="tooltip">
+                                    <div class="popup-header">
+                                        <span class="popup-label body">BODY</span>
+                                        <h4 class="popup-title">Open-to-Close Range</h4>
+                                    </div>
+                                    <p class="popup-description">The thick rectangle showing the distance between open and close - larger bodies indicate stronger conviction and momentum</p>
+                                </div>
+
+                                <div class="popup popup-wick" id="popup-wick" role="tooltip">
+                                    <div class="popup-header">
+                                        <span class="popup-label wick">WICKS</span>
+                                        <h4 class="popup-title">High/Low Extensions</h4>
+                                    </div>
+                                    <p class="popup-description">Thin lines extending from the body to session highs/lows - reveal price levels that were tested but rejected by the market</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="definition-grid" id="definition-grid"></div>
+                    </div>
+                </article>
+
+                <!-- Color Psychology -->
+                <article class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Color Psychology & Market Signals</h3>
+
+                        <div class="psychology-candle-display-section">
+                            <div class="psychology-single-candle-display" id="psychology-candle-display" data-mode="bullish" role="tabpanel">
+                                <h4 class="psychology-candle-title">BULLISH (Green)</h4>
+                                <div class="psychology-candle-visual">
+                                    <div class="psychology-visual-wick"></div>
+                                    <div class="psychology-visual-body"></div>
+                                    <div class="psychology-visual-wick"></div>
+                                </div>
+                                <div class="psychology-candle-description">
+                                    Close > Open = Buyers won<br>
+                                    Green triggers dopamine release and confidence, encouraging more buying behavior.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="psychology-toggle-controls">
+                            <div class="psychology-mode-toggle" role="tablist" aria-label="Psychology Mode Selection">
+                                <button class="psychology-toggle-btn bullish active" data-mode="bullish" role="tab" aria-selected="true" tabindex="0">BULLISH</button>
+                                <button class="psychology-toggle-btn bearish" data-mode="bearish" role="tab" aria-selected="false" tabindex="-1">BEARISH</button>
+                            </div>
+                        </div>
+
+                        <div class="psychology-content-container" data-mode="bullish">
+                            <div class="psychology-content-wrapper">
+                                <!-- Bullish Panel -->
+                                <div class="psychology-mode-panel bullish-panel">
+                                    <div class="patterns-grid">
+                                        <article class="pattern-card bullish-pattern" data-pattern="bullish-formation">
+                                            <div class="pattern-header bullish-header">
+                                                <div>
+                                                    <h3 class="pattern-title">Bullish Psychology</h3>
+                                                    <p class="pattern-subtitle">BUYER CONFIDENCE - Educational</p>
+                                                </div>
+                                            </div>
+                                            <div class="pattern-content">
+                                                <div class="canvas-wrapper">
+                                                    <div class="canvas-container">
+                                                        <canvas class="pattern-canvas" id="canvas-bullish-formation" width="640" height="500" aria-label="Bullish Formation Animation Canvas"></canvas>
+                                                    </div>
+                                                    <div class="pattern-info-overlay">
+                                                        <div class="pattern-stage" id="patternStage-bullish-formation" aria-live="polite">Ready to explore...</div>
+                                                    </div>
+                                                </div>
+                                                <div class="controls">
+                                                    <button class="btn btn-bullish" data-action="start" data-pattern="bullish-formation">Start</button>
+                                                    <button class="btn btn-bullish" data-action="reset" data-pattern="bullish-formation">Reset</button>
+                                                </div>
+                                                <div class="pattern-info-section">
+                                                    <h4>Bullish Psychology Signals</h4>
+                                                    <div class="info-row"><span>Formation:</span><span>BASIC BULLISH</span></div>
+                                                    <div class="info-row"><span>Psychology:</span><span>Confidence & Optimism</span></div>
+                                                    <div class="info-row"><span>Key Feature:</span><span>Close > Open (Green)</span></div>
+                                                    <div class="info-row"><span>Emotion:</span><span>Dopamine Release</span></div>
+                                                </div>
+                                                <div class="pattern-description">
+                                                    <p class="pattern-desc">Green candles trigger positive psychological responses in traders. The color green is associated with success, growth, and profit, encouraging more buying behavior and market confidence.</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+
+                                <!-- Bearish Panel -->
+                                <div class="psychology-mode-panel bearish-panel">
+                                    <div class="patterns-grid">
+                                        <article class="pattern-card bearish-pattern" data-pattern="bearish-formation">
+                                            <div class="pattern-header bearish-header">
+                                                <div>
+                                                    <h3 class="pattern-title">Bearish Psychology</h3>
+                                                    <p class="pattern-subtitle">SELLER FEAR - Educational</p>
+                                                </div>
+                                            </div>
+                                            <div class="pattern-content">
+                                                <div class="canvas-wrapper">
+                                                    <div class="canvas-container">
+                                                        <canvas class="pattern-canvas" id="canvas-bearish-formation" width="640" height="500" aria-label="Bearish Formation Animation Canvas"></canvas>
+                                                    </div>
+                                                    <div class="pattern-info-overlay">
+                                                        <div class="pattern-stage" id="patternStage-bearish-formation" aria-live="polite">Ready to explore...</div>
+                                                    </div>
+                                                </div>
+                                                <div class="controls">
+                                                    <button class="btn btn-bearish" data-action="start" data-pattern="bearish-formation">Start</button>
+                                                    <button class="btn btn-bearish" data-action="reset" data-pattern="bearish-formation">Reset</button>
+                                                </div>
+                                                <div class="pattern-info-section bearish">
+                                                    <h4>Bearish Psychology Signals</h4>
+                                                    <div class="info-row"><span>Formation:</span><span>BASIC BEARISH</span></div>
+                                                    <div class="info-row"><span>Psychology:</span><span>Fear & Panic</span></div>
+                                                    <div class="info-row"><span>Key Feature:</span><span>Close < Open (Red)</span></div>
+                                                    <div class="info-row"><span>Emotion:</span><span>Stress Response</span></div>
+                                                </div>
+                                                <div class="pattern-description">
+                                                    <p class="pattern-desc">Red candles trigger negative psychological responses and fear in traders. The color red is associated with danger, loss, and urgency, encouraging selling behavior and market pessimism.</p>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Market Sentiment -->
+                <article class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">3</span>
+                    </div>
+                    <div class="timeline-content sentiment-content">
+                        <h3 class="timeline-title">Reading Market Sentiment</h3>
+
+                        <div class="psychology-intro">
+                            <h4>Interactive Market Psychology</h4>
+                            <p>Candlestick patterns reveal the emotions driving market behavior. Use the controls below to explore how different emotional intensities create distinct candlestick formations.</p>
+                        </div>
+
+                        <div class="global-toggle">
+                            <div class="global-mode-toggle" role="tablist" aria-label="Bull or Bear Psychology Mode">
+                                <button class="global-btn bull active" role="tab" aria-selected="true" tabindex="0">Bull Psychology</button>
+                                <button class="global-btn bear" role="tab" aria-selected="false" tabindex="-1">Bear Psychology</button>
+                            </div>
+                        </div>
+
+                        <div class="psychology-grid">
+                            <!-- Large Body Card -->
+                            <div class="psychology-card large-body-card">
+                                <div class="candle-container" role="img" aria-label="Large body candle representation">
+                                    <div class="wick upper-wick"></div>
+                                    <div class="candle-body"></div>
+                                    <div class="wick lower-wick"></div>
+                                </div>
+                                <h4>Large Body Conviction</h4>
+
+                                <div class="emotion-slider">
+                                    <label class="slider-label" for="large-body-slider">Conviction Intensity</label>
+                                    <input type="range" min="1" max="5" value="3" class="intensity-range" id="large-body-slider" aria-describedby="large-body-description">
+                                    <div class="slider-labels">
+                                        <span>Mild</span>
+                                        <span>Extreme</span>
+                                    </div>
+                                </div>
+
+                                <div class="emotion-display">
+                                    <div class="emotion-label" id="large-body-label">Moderate Conviction</div>
+                                    <div class="emotion-description" id="large-body-description">Reasonable confidence in market direction</div>
+                                    <div class="emotion-quote" id="large-body-quote">"This looks solid, staying disciplined."</div>
+                                </div>
+                            </div>
+
+                            <!-- Small Body Card -->
+                            <div class="psychology-card small-body-card">
+                                <div class="candle-container" role="img" aria-label="Small body candle representation">
+                                    <div class="wick upper-wick"></div>
+                                    <div class="candle-body"></div>
+                                    <div class="wick lower-wick"></div>
+                                </div>
+                                <h4>Small Body Indecision</h4>
+
+                                <div class="emotion-slider">
+                                    <label class="slider-label" for="small-body-slider">Uncertainty Level</label>
+                                    <input type="range" min="1" max="5" value="3" class="intensity-range" id="small-body-slider" aria-describedby="small-body-description">
+                                    <div class="slider-labels">
+                                        <span>Slight</span>
+                                        <span>Paralyzed</span>
+                                    </div>
+                                </div>
+
+                                <div class="emotion-display">
+                                    <div class="emotion-label" id="small-body-label">Market Uncertainty</div>
+                                    <div class="emotion-description" id="small-body-description">Neither buyers nor sellers in control</div>
+                                    <div class="emotion-quote" id="small-body-quote">"Mixed signals - waiting for clarity."</div>
+                                </div>
+                            </div>
+
+                            <!-- Long Wick Card -->
+                            <div class="psychology-card long-wick-card">
+                                <div class="candle-container" role="img" aria-label="Long wick candle representation">
+                                    <div class="wick upper-wick"></div>
+                                    <div class="candle-body"></div>
+                                    <div class="wick lower-wick"></div>
+                                </div>
+                                <h4>Long Wick Rejection</h4>
+
+                                <div class="emotion-slider">
+                                    <label class="slider-label" for="long-wick-slider">Rejection Strength</label>
+                                    <input type="range" min="1" max="5" value="3" class="intensity-range" id="long-wick-slider" aria-describedby="long-wick-description">
+                                    <div class="slider-labels">
+                                        <span>Weak</span>
+                                        <span>Fierce</span>
+                                    </div>
+                                </div>
+
+                                <div class="emotion-display">
+                                    <div class="emotion-label" id="long-wick-label">Resistance at Highs</div>
+                                    <div class="emotion-description" id="long-wick-description">Bulls pushing higher meeting selling</div>
+                                    <div class="emotion-quote" id="long-wick-quote">"Hitting resistance - sellers defending hard."</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Timeframe Analysis -->
+                <article class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">4</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Professional Timeframe Analysis</h3>
+                        <div class="timeframe-pyramid" id="timeframe-pyramid"></div>
+                    </div>
+                </article>
+
+                <!-- Analysis Principles -->
+                <article class="timeline-item">
+                    <div class="timeline-marker">
+                        <span class="timeline-number">5</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Professional Analysis Principles</h3>
+                        <div class="analysis-principles" id="analysis-principles"></div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="next-steps-section" id="next-steps"></div>
+        </section>
+
+        <!-- Pattern Sections -->
+        <section id="single" aria-labelledby="single-title">
+            <h2 id="single-title" class="section-title">Single Patterns (12)</h2>
+            <input type="text" id="singleSearch" placeholder="Search single patterns..." class="search-bar" aria-label="Search single patterns">
+            <div class="patterns-grid" id="single-patterns"></div>
+            <div class="section-navigation">
+                <a href="#quick-navigation" class="back-to-navigation-btn">↑ Back to Navigation</a>
+            </div>
+        </section>
+
+        <section id="double" aria-labelledby="double-title">
+            <h2 id="double-title" class="section-title">Double Patterns (6)</h2>
+            <input type="text" id="doubleSearch" placeholder="Search double patterns..." class="search-bar" aria-label="Search double patterns">
+            <div class="patterns-grid" id="double-patterns"></div>
+            <div class="section-navigation">
+                <a href="#quick-navigation" class="back-to-navigation-btn">↑ Back to Navigation</a>
+            </div>
+        </section>
+
+        <section id="triple" aria-labelledby="triple-title">
+            <h2 id="triple-title" class="section-title">Triple Patterns (6)</h2>
+            <input type="text" id="tripleSearch" placeholder="Search triple patterns..." class="search-bar" aria-label="Search triple patterns">
+            <div class="patterns-grid" id="triple-patterns"></div>
+            <div class="section-navigation">
+                <a href="#quick-navigation" class="back-to-navigation-btn">↑ Back to Navigation</a>
+            </div>
+        </section>
+
+        <section id="complex" aria-labelledby="complex-title">
+            <h2 id="complex-title" class="section-title">Complex Patterns (4)</h2>
+            <input type="text" id="complexSearch" placeholder="Search complex patterns..." class="search-bar" aria-label="Search complex patterns">
+            <div class="patterns-grid" id="complex-patterns"></div>
+            <div class="section-navigation">
+                <a href="#quick-navigation" class="back-to-navigation-btn">↑ Back to Navigation</a>
+            </div>
+        </section>
+
+        <!-- Psychology Lab -->
+        <section id="strategies" aria-labelledby="strategies-title">
+            <div class="comprehensive-section">
+                <h2 id="strategies-title" class="comprehensive-title">The Candlestick Psychology Laboratory</h2>
+                <p class="section-intro">"Understanding the human mind behind every candlestick - the deepest educational journey into market psychology ever created"</p>
+                <div id="psychology-lab-content"></div>
+            </div>
+            <div class="section-navigation">
+                <a href="#quick-navigation" class="back-to-navigation-btn">↑ Back to Navigation</a>
+            </div>
+        </section>
+
+        <!-- Quick Reference -->
+        <section class="cheat-sheet-section" aria-labelledby="cheat-title">
+            <h2 id="cheat-title" class="section-title">Complete Candlestick Quick Reference (30 Patterns)</h2>
+
+            <div class="pattern-overview-grid">
+                <div class="trading-rules-summary">
+                    <div class="trading-rules-header">
+                        <h3 class="trading-rules-title">Essential Trading Rules</h3>
+                    </div>
+                    <div class="rules-grid">
+                        <div class="rules-column">
+                            <div class="rule-item">
+                                <span class="rule-icon">🎯</span>
+                                <div class="rule-content">
+                                    <span class="rule-text"><strong>Context is King:</strong> Never ignore trend direction</span>
+                                    <span class="rule-detail">A bullish hammer in a downtrend is significantly more reliable than the same pattern in an uptrend. Always check higher timeframes for trend context before making decisions.</span>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <span class="rule-icon">📊</span>
+                                <div class="rule-content">
+                                    <span class="rule-text"><strong>Volume Matters:</strong> Higher volume = higher reliability</span>
+                                    <span class="rule-detail">Patterns with above-average volume show institutional participation and provide the momentum needed for successful breakouts and follow-through.</span>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <span class="rule-icon">🛡️</span>
+                                <div class="rule-content">
+                                    <span class="rule-text"><strong>Risk Management:</strong> Never risk more than 1-2% per trade</span>
+                                    <span class="rule-detail">Professional traders survive by managing risk first, profits second. Position sizing based on stop-loss distance ensures you can weather inevitable losses while staying in the game.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rules-column">
+                            <div class="rule-item">
+                                <span class="rule-icon">✅</span>
+                                <div class="rule-content">
+                                    <span class="rule-text"><strong>Confirmation:</strong> Wait for follow-through</span>
+                                    <span class="rule-detail">Single patterns often fail without confirmation. Use the next candle, volume surge, or support/resistance break to validate your pattern signal before entering.</span>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <span class="rule-icon">⏰</span>
+                                <div class="rule-content">
+                                    <span class="rule-text"><strong>Timeframes:</strong> Higher timeframes more reliable</span>
+                                    <span class="rule-detail">Daily patterns outperform hourly patterns significantly. Weekly patterns rarely fail. Use multiple timeframe analysis: weekly for trend, daily for entry, hourly for precision timing.</span>
+                                </div>
+                            </div>
+                            <div class="rule-item">
+                                <span class="rule-icon">🧠</span>
+                                <div class="rule-content">
+                                    <span class="rule-text"><strong>Psychology:</strong> Understand the emotions behind patterns</span>
+                                    <span class="rule-detail">Every pattern represents human fear, greed, hope, or despair. Understanding WHY patterns form improves your timing and confidence. Market psychology never changes, only execution speed does.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cheat-sheet-content">
+                <div class="table-header">
+                    <h3>Complete Pattern Reference Table</h3>
+                    <p>Master reference for all 30 candlestick patterns - bookmark this section for quick pattern identification</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Pattern Name</th>
+                                <th>Formation Type</th>
+                                <th>Best Context</th>
+                                <th>Key Identifying Feature</th>
+                            </tr>
+                        </thead>
+                        <tbody id="comparison-table-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section-navigation">
+                <a href="#quick-navigation" class="back-to-navigation-btn">↑ Back to Navigation</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
